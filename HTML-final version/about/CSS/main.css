@@ -1,0 +1,290 @@
+
+.b4:hover, .b5:active {font-size: 18px;}
+.b5:hover, .b5:active {font-size: 18px;}
+.title:hover, .title:active{font-size: 41px;}
+@media only screen and (min-width: 1395px) {
+  .title:hover, .title:active{font-size: 41px;}
+  /* text */
+ .a1:hover, .a1:active {font-size: 24px; color:#eb2f2f;}
+.a2:hover, .a2:active {font-size: 24px; color:#FFBC47;}
+
+
+  .title {
+    position: fixed;
+    left: 50px;
+    top: 100px;
+    font-family: "Russo One";
+    font-size: 40px;
+    line-height: 25px;
+    z-index: 100;
+  }
+  nv {
+    position: fixed;
+    left: 50px;
+    top: 350px;
+    z-index: 300;
+  }
+  .main {
+    z-index: 300;
+    font-size: 20px;
+    font-family: "Montserrat Subrayada";
+    font-weight: bold;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  .sub {
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-family: "Helvetica";
+  }
+
+  .a3 {
+    color: #4784ff;
+  }
+  .b4 {
+    color: #4784ff;
+  }
+
+  .head {
+    font-size: 40px;
+    font-family: "Arial";
+    font-weight: bold;
+  }
+  .information {
+    font-size: 15px;
+    line-height: 22px;
+    font-family: "Arial";
+  }
+
+  /*layout*/
+  .grid {
+    display: grid;
+    position: absolute;
+    top: 0px;
+    grid-template-columns: minmax(450px, 800px) minmax(800px, 1000px) minmax(
+        50px,
+        60px
+      );
+  }
+  .p2{
+    padding-top:200px;
+  }
+  .intro {
+    display: grid;
+    grid-row-gap: 0px;
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 100px;
+    top: 50px;
+    grid-column-start: 2;
+    background: rgba(255, 255, 255, 0.85);
+  }
+  .portrait img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+  .overview {
+    padding-bottom: 20px;
+  }
+  .biography {
+    padding-top: 200px;
+    padding-bottom: 20px;
+  }
+  .Biography {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* img */
+  .texture {
+    left: 0px;
+    top: 0px;
+    display: grid;
+    width: 100%;
+    position: fixed;
+    opacity: 0.15;
+    align-items: stretch;
+    justify-items: stretch;
+    z-index: -1;
+  }
+  .backgroundimg {
+    display: grid;
+    left: 0px;
+    width: 120%;
+    top: 0px;
+    opacity: 0.6;
+    position: fixed;
+    justify-items: stretch;
+    align-items: stretch;
+    z-index: -3;
+
+  }
+  .backgroundimg img{
+  width:100%;
+
+}
+  .shapes {
+    display: grid;
+
+    width: 100%;
+    top: 0px;
+    opacity: 0.8;
+    position: fixed;
+    justify-items: stretch;
+    align-items: stretch;
+    z-index: 2;
+  }
+.img1 img{
+    width:50vw;
+    min-width: 600px;
+  }
+}
+
+@media only screen and (max-width: 1395px) {
+  .title:hover, .title:active{font-size: 32px;}
+  .title {
+    z-index:100;
+    text-align: center;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    min-width: 988px;
+    font-family: "Russo One";
+    font-size: 30px;
+    line-height: 25px;
+  }
+
+  nv{
+    z-index:100;
+    display: grid;
+    position: fixed;
+    grid-template-columns: minmax(290px, 480px) 100px 40px 100px 40px 100px minmax(
+        290px,
+        480px
+      );
+    left: 0px;
+    top: 160px;
+    background: white;
+    width: 100%;
+    min-width: 988px;
+    padding-bottom: 16px;
+  }
+  .main {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Montserrat Subrayada";
+    font-weight: bold;
+    color: black;
+    background-color: white;
+  }
+  .a1 {
+    grid-column-start: 2;
+  }
+  .a2 {
+    grid-column-start: 4;
+  }
+  .a3 {
+    grid-column-start: 6;
+    color: #4784ff;
+  }
+  .sub {
+    display: none;
+  }
+  .head {
+    font-size: 40px;
+    font-family: "Arial";
+    font-weight: bold;
+  }
+  .information {
+    font-size: 15px;
+    line-height: 22px;
+    font-family: "Arial";
+  }
+  .texture {
+    top: 0px;
+    display: grid;
+    width: 100%;
+    position: fixed;
+    opacity: 0.15;
+    align-items: stretch;
+    justify-items: stretch;
+    z-index: -1;
+  }
+  .backgroundimg {
+    display: grid;
+align-items: stretch;
+    justify-items: stretch;
+    width: 110%;
+    top: 0px;
+    opacity: 0.4;
+    position: fixed;
+    left:0px;
+    z-index: -2;
+  }
+  .backgroundimg img{
+  width:120%;
+  min-width: 1200px;
+}
+  .shapes {
+    display:none;
+    width: 100%;
+    top: 0px;
+    opacity: 0.8;
+    position: fixed;
+
+    align-items: stretch;
+    z-index: -5;
+  }
+  .grid {
+    display: grid;
+    position: absolute;
+    top: 200px;
+    
+    grid-template-columns: 100px minmax(778px, 1195px) 100px;
+  }
+  .intro {
+    
+    display: grid;
+    grid-row-gap: 0px;
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 100px;
+    top: 50px;
+    grid-column-start: 2;
+    background: rgba(255, 255, 255, 0.85);
+  }
+  .portrait img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+  .overview {
+    padding-bottom: 20px;
+  }
+  .biography {
+    padding-top: 200px;
+    padding-bottom: 20px;
+  }
+  .Biography {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .img1 img{
+    width:60vw;
+    min-width: 600px;
+  }
+  .p2{
+    display: none;
+  }
+}
+.a1:hover, .a1:active {font-size: 24px; color:#eb2f2f;}
+.a2:hover, .a2:active {font-size: 24px; color:#FFBC47;}
+
